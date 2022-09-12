@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=27177" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=27177" type="text/javascript"></script>
+    <link href="css/main.css?v=15551" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=15551" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -22,19 +22,64 @@
     
   </head>
   <body>
-    <!--include ../includes/header-->
-    <div id="sections">
-      <section class="section--main">
-        <div class="section__bg">
-          <div class="bg"><img src="img/uploads/1.jpeg"></div>
-        </div>
-        <div class="section__body">
-          <div class="section__logo"><img src="img/icons/unab-logo.png"></div>
-          <div class="section__content">
-            <h1 class="section__title"><strong>Reprogramación</strong> de cuotas arancel</h1>
-            <p class="section__description">Porque nos interesa que puedas seguir estudiando tranquilamente, en este espacio podrás regularizar tu situación financiera</p>
-            <div class="section__buttons"><a href="considerations.html" class="btn">Comenzar proceso	</a><a href="status.html" class="btn btn--gray">Estado de solicitud</a></div>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/unab-logo.png"></a></div>
+            <div class="header__dates"> 
+              <div class="header__date"> 
+                <p>Alumno:<span>Camila Ibañez</span></p>
+                <p>Carrera: <span>Ingeniería civil industrial</span></p>
+                <p>Sede: <span>Bellavista</span></p>
+              </div>
+              <div class="header__date"> 
+                <p>Jornada:<span>Diurno</span></p>
+                <p>Período: <span>1° Semestre</span></p>
+                <p>Año: <span>2022    </span></p>
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--step">
+        <div class="section__wrap">
+          <form class="form">
+            <div class="section__header">
+              <div class="section__steps">
+                <div class="section__step section__step--current">
+                  <div class="section__cirlce"><span>1</span></div>
+                  <div class="section__text">Datos personales</div>
+                </div>
+                <div class="section__step section__step--current">
+                  <div class="section__cirlce"><span>2</span></div>
+                  <div class="section__text">Opciones de pago</div>
+                </div>
+                <div class="section__step section__step--current">
+                  <div class="section__cirlce"><span>3</span></div>
+                  <div class="section__text">Reprogramación</div>
+                </div>
+                <div class="section__step section__step--current">
+                  <div class="section__cirlce"><span>4</span></div>
+                  <div class="section__text">Ingreso solicitud</div>
+                </div>
+              </div>
+            </div>
+            <div class="section__body">
+              <div class="section__card">
+                <div class="section__card__header">
+                  <h4 class="section__title">Solicitud ingresada: Primera etapa completada</h4>
+                </div>
+                <div class="section__card__body">
+                  <p class="section__subtitle">Nº solicitud: 0000</p>
+                  <p class="section__description">Te hemos enviado un correo con los detalles de tu solicitud. <strong>En un plazo no superior a 3 días hábiles, tendrás respuesta a tu solicitud por esta misma plataforma.</strong> Puedes revisar el “Estado de solicitud” en el menú principal para continuar.</p>
+                </div>
+              </div>
+              <div class="section__buttons"><a href="#" class="btn btn--gray">Cerrar sesión</a><a data-next-stage class="btn">Estado de solicitud</a></div>
+            </div>
+          </form>
         </div>
       </section>
       <div class="modal modal--login">
