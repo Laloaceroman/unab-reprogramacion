@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=18229" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=18229" type="text/javascript"></script>
+    <link href="css/main.css?v=31476" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=31476" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -56,28 +56,45 @@
                   <div class="form__element"> 
                     <div class="form__title">Tipo de usuario </div>
                     <div class="form__input">
-                      <select name="#">
+                      <select id="selectuser" name="#">
                         <option disabled selected>Seleccione </option>
-                        <option value="#">Estudiante</option>
+                        <option value="students" typeuser="students">Estudiante</option>
+                        <option value="contractor" typeuser="contractor">Contratante</option>
                       </select>
                     </div>
+                  </div>
+                  <div class="form__typeuser form__typeuser--students form__typeuser--show dscroll">
                     <div class="form__info"> 
                       <p>Importante: Recomendamos que este proceso lo realice el contratante, ya que se le solicitará documentación e información.</p>
                     </div>
-                  </div>
-                  <div class="form__element"> 
-                    <div class="form__title">Rut</div>
-                    <div class="form__input">
-                      <input type="text" name="#" placeholder="Ingrese su rut">
+                    <div class="form__element"> 
+                      <div class="form__title">Usuario Intranet</div>
+                      <div class="form__input">
+                        <input type="text" name="user" placeholder="Ingrese su usuario">
+                      </div>
+                    </div>
+                    <div class="form__element"> 
+                      <div class="form__title">Contraseña</div>
+                      <div class="form__input">
+                        <input type="password" name="password_student" placeholder="Ingrese su contraseña">
+                      </div>
                     </div>
                   </div>
-                  <div class="form__element"> 
-                    <div class="form__title">Contraseña</div>
-                    <div class="form__input">
-                      <input type="password" name="#" placeholder="Ingrese su contraseña">
+                  <div class="form__typeuser form__typeuser--contractor dscroll">
+                    <div class="form__element"> 
+                      <div class="form__title">Rut</div>
+                      <div class="form__input">
+                        <input type="text" name="rut" placeholder="Ingrese su rut">
+                      </div>
                     </div>
-                    <div class="form__resetpassword">
-                      <p>¿Olvidaste tu contraseña? <a href="#">Recuperala aquí</a></p>
+                    <div class="form__element"> 
+                      <div class="form__title">Contraseña</div>
+                      <div class="form__input">
+                        <input type="password" name="password_contractor" placeholder="Ingrese su contraseña">
+                      </div>
+                      <div class="form__resetpassword">
+                        <p>¿Olvidaste tu contraseña? <a href="#">Recuperala aquí</a></p>
+                      </div>
                     </div>
                   </div>
                   <div class="form__buttons"> 

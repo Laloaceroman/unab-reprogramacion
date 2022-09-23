@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <link href="img/icons/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=95929" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=95929" type="text/javascript"></script>
+    <link href="css/main.css?v=41034" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=41034" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -82,18 +82,10 @@
                         <div class="cols">
                           <div class="col-md-12">
                             <div class="form__element">
-                              <div class="form__title">Dependiente</div>
                               <div class="form__input">
-                                <select name="#">
-                                  <option value="#" disabled selected>Seleccione</option>
-                                  <option value="#">Pellentesque
-                                  </option>
-                                  <option value="#">Inceptos
-                                  </option>
-                                  <option value="#">Porttitor
-                                  </option>
-                                  <option value="#">At
-                                  </option>
+                                <select id="selecttypework" name="#">
+                                  <option value="#" typework="dependent">Dependiente</option>
+                                  <option value="#" typework="independent">Independiente</option>
                                 </select>
                               </div>
                             </div>
@@ -101,71 +93,147 @@
                         </div>
                       </div>
                     </div>
-                    <div class="section__form__header">
-                      <h5 class="section__title">Acreditación de renta</h5>
+                    <div class="section__form__option section__form__option--dependent section__form__option--show dscroll">
+                      <div class="section__form__header">
+                        <h5 class="section__title">Acreditación de renta</h5>
+                      </div>
+                      <div class="section__form__body">
+                        <div class="section__form__form">
+                          <div class="cols">
+                            <div class="col-md-12">
+                              <div class="form__element">
+                                <div class="form__title">Promedio últimas 3 liquidaciones</div>
+                                <div class="form__input">
+                                  <input type="number" name="#" placeholder="Ingresar promedio">
+                                </div>
+                                <div class="form__infocircle">
+                                  <div class="form__circle"><span>i</span></div>
+                                  <div class="form__tooltip"> 
+                                    <h5>Promedio últimas 3 liquidaciones</h5>
+                                    <p>Debes ingresar el valor promedio de tus 3 últimas liquidaciones de sueldo, este de calcula con la sumatoria de tus montos percibidos líquidos.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="section__form__attach">
+                                <div class="section__form__attach__action">
+                                  <input type="file" name="#">
+                                  <div class="section__form__attach__button"> <img src="img/icons/icon-plus.png"></div>
+                                  <div class="section__form__attach__content"> 
+                                    <h5>Adjuntar las últimas 3 liquidaciones</h5>
+                                    <p>o el certificado de AFP de los últimos 12 meses</p>
+                                  </div>
+                                </div>
+                                <div class="section__form__attach__files"> 
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Liquidacion_01.doc</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Liquidacion_02.doc</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Liquidacion_03.doc</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="section__form__attach">
+                                <div class="section__form__attach__action">
+                                  <input type="file" name="#">
+                                  <div class="section__form__attach__button"> <img src="img/icons/icon-plus.png"></div>
+                                  <div class="section__form__attach__content"> 
+                                    <h5>Adjuntar acreditación de residencia</h5>
+                                    <p>Certificado de residencia o cuenta de servicios básicos, casas comerciales o telefonía.</p>
+                                  </div>
+                                </div>
+                                <div class="section__form__attach__files"> 
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Certificado.pdf</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="section__form__body">
-                      <div class="section__form__form">
-                        <div class="cols">
-                          <div class="col-md-12">
-                            <div class="form__element">
-                              <div class="form__title">Promedio últimas 3 liquidaciones</div>
-                              <div class="form__input">
-                                <input type="number" name="#" placeholder="Ingresar promedio">
-                              </div>
-                              <div class="form__infocircle">
-                                <div class="form__circle"><span>i</span></div>
-                                <div class="form__tooltip"> 
-                                  <h5>Promedio últimas 3 liquidaciones</h5>
-                                  <p>Debes ingresar el valor promedio de tus 3 últimas liquidaciones de sueldo, este de calcula con la sumatoria de tus montos percibidos líquidos.</p>
+                    <div class="section__form__option section__form__option--independent dscroll">
+                      <div class="section__form__header">
+                        <h5 class="section__title">Acreditación de renta</h5>
+                      </div>
+                      <div class="section__form__body">
+                        <div class="section__form__form">
+                          <div class="cols">
+                            <div class="col-md-12">
+                              <div class="form__element">
+                                <div class="form__title">Promedio renta últimos 6 meses</div>
+                                <div class="form__input">
+                                  <input type="number" name="#" placeholder="Ingresar promedio">
+                                </div>
+                                <div class="form__infocircle">
+                                  <div class="form__circle"><span>i</span></div>
+                                  <div class="form__tooltip"> 
+                                    <h5>Promedio últimas 3 liquidaciones</h5>
+                                    <p>Debes ingresar el valor promedio de tus 3 últimas liquidaciones de sueldo, este de calcula con la sumatoria de tus montos percibidos líquidos.</p>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="section__form__attach">
-                              <div class="section__form__attach__action">
-                                <input type="file" name="#">
-                                <div class="section__form__attach__button"> <img src="img/icons/icon-plus.png"></div>
-                                <div class="section__form__attach__content"> 
-                                  <h5>Adjuntar las últimas 3 liquidaciones</h5>
-                                  <p>o el certificado de AFP de los últimos 12 meses</p>
+                            <div class="col-md-12">
+                              <div class="section__form__attach">
+                                <div class="section__form__attach__action">
+                                  <input type="file" name="#">
+                                  <div class="section__form__attach__button"> <img src="img/icons/icon-plus.png"></div>
+                                  <div class="section__form__attach__content"> 
+                                    <h5>Adjuntar documentos de las últimas 6 rentas</h5>
+                                    <p>Puede ser boletas de honorarios, formulario 29 o formulario 22.</p>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="section__form__attach__files"> 
-                                <div class="section__form__file">
-                                  <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
-                                  <p class="section__name">Liquidacion_01.doc</p>
-                                  <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
-                                </div>
-                                <div class="section__form__file">
-                                  <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
-                                  <p class="section__name">Liquidacion_02.doc</p>
-                                  <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
-                                </div>
-                                <div class="section__form__file">
-                                  <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
-                                  <p class="section__name">Liquidacion_03.doc</p>
-                                  <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                <div class="section__form__attach__files"> 
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Liquidacion_01.doc</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Liquidacion_02.doc</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Liquidacion_03.doc</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="section__form__attach">
-                              <div class="section__form__attach__action">
-                                <input type="file" name="#">
-                                <div class="section__form__attach__button"> <img src="img/icons/icon-plus.png"></div>
-                                <div class="section__form__attach__content"> 
-                                  <h5>Adjuntar acreditación de residencia</h5>
-                                  <p>Certificado de residencia o cuenta de servicios básicos, casas comerciales o telefonía.</p>
+                            <div class="col-md-12">
+                              <div class="section__form__attach">
+                                <div class="section__form__attach__action">
+                                  <input type="file" name="#">
+                                  <div class="section__form__attach__button"> <img src="img/icons/icon-plus.png"></div>
+                                  <div class="section__form__attach__content"> 
+                                    <h5>Adjuntar acreditación de residencia</h5>
+                                    <p>Certificado de residencia o cuenta de servicios básicos, casas comerciales o telefonía.</p>
+                                  </div>
                                 </div>
-                              </div>
-                              <div class="section__form__attach__files"> 
-                                <div class="section__form__file">
-                                  <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
-                                  <p class="section__name">Certificado.pdf</p>
-                                  <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                <div class="section__form__attach__files"> 
+                                  <div class="section__form__file">
+                                    <div class="section__icon"> <img src="img/icons/icon-file.png"></div>
+                                    <p class="section__name">Certificado.pdf</p>
+                                    <div class="section__delete"> <img src="img/icons/icon-close.png"></div>
+                                  </div>
                                 </div>
                               </div>
                             </div>
@@ -201,13 +269,13 @@
                             <div class="form__input">
                               <select name="#">
                                 <option value="#" disabled selected>Seleccione</option>
-                                <option value="#">Vulputate
+                                <option value="#">Aliquam
                                 </option>
-                                <option value="#">Rhoncus
+                                <option value="#">Ornare
                                 </option>
-                                <option value="#">Vel
+                                <option value="#">Himenaeos
                                 </option>
-                                <option value="#">Quam
+                                <option value="#">Elementum
                                 </option>
                               </select>
                             </div>
@@ -219,13 +287,13 @@
                             <div class="form__input">
                               <select name="#">
                                 <option value="#" disabled selected>Seleccione</option>
-                                <option value="#">Nam
+                                <option value="#">Senectus
                                 </option>
-                                <option value="#">Quisque
+                                <option value="#">Neque
                                 </option>
-                                <option value="#">Id
+                                <option value="#">Purus
                                 </option>
-                                <option value="#">Felis
+                                <option value="#">Malesuada
                                 </option>
                               </select>
                             </div>
